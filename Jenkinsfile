@@ -8,7 +8,6 @@ node ('master') {
     stage('Update or Create Stack') {
      // first cloud formatation stack
         try {sh 'aws cloudformation update-stack --stack-name wpo-devops-praveen-demo --template-body file://ec2.yml' } catch (Exception e) {}
-        try {sh 'aws cloudformation create-stack --stack-name wpo-devops-praveen-demo --template-body file://ec2.yml' } catch (Exception e) {}
-                                               
+        try {sh 'aws cloudformation create-stack --stack-name wpo-devops-praveen-demo --template-body file://ec2.yml' } catch (Exception e) {}                                              
     }
 }
