@@ -2,7 +2,7 @@ node ('master') {
     stage('Code Check out') {
                 git branch: 'master',
                 credentialsId: '1c94903a-36c5-4919-a5fc-271fa4f76459' ,
-                url: 
+                url: 'https://github.com/praveen22011992/My_Repo.git'
                   
   }
     stage('Update or Create Stack') {
